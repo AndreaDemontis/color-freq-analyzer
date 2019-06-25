@@ -1,0 +1,65 @@
+div.container
+{
+    border-top: 4px solid #43893f;
+    background-color: #1c1c1c;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+}
+
+
+div.container > div.info
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 600px;
+}
+
+div.title
+{
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width: 600px;
+    height: 33px;
+    margin-bottom: 0px;
+
+    color: #d6d6d6;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bolder;
+}
+
+div.path
+{
+    text-overflow: ellipsis;
+
+    color: #8b8b8b;
+    font-size: 11px;
+}
+
+div.goUp
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    align-self: center;
+
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+div.goUp::after
+{
+    content: "▲";
+
+    position: absolute;
+    left: calc(50% - 4px);
+    top: 5px;
+}

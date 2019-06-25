@@ -1,0 +1,82 @@
+.container
+{
+    height: 316px;
+    width: 100%;
+
+    background-color: #232323;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline
+{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.hist
+{
+    width: 100%;
+    display: flex;
+    margin-top: -4px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeRight, .timeLeft
+{
+    width: 130px;
+
+    text-align: center;
+    line-height: 12px;
+
+    padding-bottom: 16px;
+}
+
+.time
+{
+    font-family: "consolas";
+    font-size: 14px;
+    color: #BBB;
+}
+
+.frame
+{
+    font-family: "consolas";
+    font-size: 11px;
+    font-weight: bolder;
+    color: #666;
+}
+
+.controls
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.zoomBar
+{
+    cursor: move;
+}
+
+.zoomBar:hover
+{ fill: #50BA35; }
+.zoomBar:active
+{ fill: #40962B; }
+
+.zoomLeftHandle, .zoomRightHandle
+{
+    cursor: col-resize;
+}
+
+.zoomLeftHandle:hover, .zoomRightHandle:hover
+{ fill: #B3D3AD; }
+.zoomLeftHandle:active, .zoomRightHandle:active
+{ fill: #5F705C; }

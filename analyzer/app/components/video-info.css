@@ -1,0 +1,142 @@
+div.videoInformations
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 58px;
+
+    transition: height 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+div.videoInformations > div.preview
+{
+    background: black;
+    transition: height 0.5s, width 0.5s;
+}
+
+div.videoInformations > div.preview > video
+{
+    transition: height 0.5s, width 0.5s;
+}
+
+div.videoInformations > div.informations
+{
+    margin-left: 30px;
+    margin-top: 10px;
+    transition: width 0.2s;
+}
+
+div.controls
+{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.controls > div
+{
+    height: 30px;
+}
+
+div.controls > div > div
+{
+    transition: transform 0.2s;
+    transform-origin: center;
+    margin-left: 12px;
+}
+
+div.discardButton:hover
+{
+    background: #B53636 !important;
+}
+
+div.discardButton:active
+{
+    background: #912B2B !important;
+}
+
+div.informations > div.header > div.title
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: #d6d6d6;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bolder;
+}
+
+div.informations > div.header > div.path
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 2px;
+
+    color: #8b8b8b;
+    font-size: 11px;
+
+}
+
+div.informations > div.header > ul.tags
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+div.informations > div.header > ul.tags > li
+{
+    color: #8b8b8b;
+    background: #111;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+div.informations > table.table
+{
+    margin-top: 20px;
+    width: 400px;
+
+    border-collapse: collapse;
+}
+
+div.informations > table.table td:first-child
+{ width: 170px; font-weight: bolder; }
+
+div.informations > table.table td:nth-child(2)
+{ color: #BBB; font-size: 13px; }
+
+div.informations > table.table tr:last-child td
+{ border: none; }
+
+div.informations > table.table td
+{
+    border-bottom: 1px solid #504f4f;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 0px;
+
+    font-size: 15px;
+}

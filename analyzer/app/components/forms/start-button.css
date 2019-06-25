@@ -1,0 +1,60 @@
+div.container
+{
+    position: relative;
+}
+
+button.button, button.proggress
+{
+    transition: background-color 0.2s, transform 0.2s, border-width 0.2s, width 0.2s, height 0.2s;
+
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+
+    border: 3px solid #43893f;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+
+    font-size: 15px;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #1c1c1c;
+    padding: 0px;
+}
+
+button.button
+{
+    border: 3px solid #43893f;
+    border-left-width: 170px !important;
+}
+
+button.button:hover
+{
+    border-color: #4EA049;
+}
+
+button.button:active
+{
+    background: #3A7737;
+    border-color: #3A7737;
+}
+
+button.proggress
+{
+    background: transparent;
+    border-left-width: 3px;
+    height: 40px;
+    width: 240px;
+}
+
+div.content
+{
+    transition: transform 0.2s;
+    position: absolute;
+    left: 0; right: 0;
+
+    margin: auto;
+    margin-top: -7px;
+}

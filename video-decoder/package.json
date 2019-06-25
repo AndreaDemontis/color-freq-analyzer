@@ -1,0 +1,16 @@
+{
+	"name": "video-decoder",
+	"version": "1.0.0",
+	"description": "AVLibs C++ module for efficient video analisys",
+	"author": "Andrea Demontis",
+	"license": "ISC",
+	"main": "bindings.js",
+	"scripts": {
+		"build": "node-gyp build",
+		"install": "node-gyp rebuild",
+		"start": "node ./index.js"
+	},
+	"dependencies": {
+		"nan": "^2.11.0"
+	}
+}

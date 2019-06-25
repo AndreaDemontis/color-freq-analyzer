@@ -1,0 +1,98 @@
+div.container
+{
+}
+
+div.introPanel
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+div.introPanel > .description
+{
+    font-size: 14px;
+    text-align: left;
+    text-align: justify;
+}
+
+div.introPanel > img
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.dropTitle
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-size: 30px;
+}
+
+div.switch
+{
+    height: 35px;
+    background: #1c1c1c;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+div.switch::after
+{
+    content: "▼";
+
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: 5px;
+}
+
+div.analysisPanel
+{
+    width: 100%;
+    transition: top 0.3s;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+}
+
+div.viewerPanel
+{
+    width: 100%;
+    transition: top 0.3s;
+    position: absolute;
+    top: 100%;
+}
+
+div.viewer
+{
+    height: 400px;
+    width: 100%;
+
+    background: black;
+    flex-direction: row;
+    text-align: center;
+}
+
+div.viewer > canvas
+{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}

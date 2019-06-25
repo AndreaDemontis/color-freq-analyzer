@@ -1,0 +1,153 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body
+{
+    position: relative;
+    background-color: #2e2d2b;
+
+    height: 100vh;
+    overflow: hidden;
+
+    font-family: Arial;
+    color: #686868;
+
+    margin: 0px;
+    padding: 0px;
+
+    user-select: none;
+}
+
+p
+{
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h1
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+
+    color: #504f4f;
+
+    width: 100%;
+}
+
+h1:before, h1:after
+{
+    position: absolute;
+    overflow: hidden;
+    top: 51%;
+
+    width: 50%;
+    height: 1px;
+
+    content: '\a0';
+    background-color: currentColor;
+}
+
+h1:after
+{
+    margin-left: 30px;
+    text-align: right;
+}
+
+h1:before
+{
+    margin-left: calc(-50% - 30px);
+    text-align: right;
+}
+
+input[type=checkbox]
+{
+	-webkit-appearance: none;
+    outline: none;
+	background-color: transparent;
+	border: 1px solid #707070;
+	padding: 7px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type=checkbox]:active, input[type=checkbox]:checked:active
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type=checkbox]:checked
+{
+	background-color: #707070;
+}
+
+input[type=checkbox]:checked:after
+{
+	content: ' ';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    border-radius: 3px;
+    border: 2px solid #2e2d2b;
+}
+
+input[type=radio]
+{
+	-webkit-appearance: none;
+    outline: none;
+	background-color: transparent;
+	border: 1px solid #707070;
+	padding: 7px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+}
+
+input[type=radio]:active, input[type=radio]:checked:active
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type=radio]:checked
+{
+	background-color: #707070;
+}
+
+input[type=radio]:checked:after
+{
+	content: ' ';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    border-radius: 50%;
+    border: 2px solid #2e2d2b;
+}
+
+label
+{
+    font-size: 11px;
+    margin-left: 5px;
+}

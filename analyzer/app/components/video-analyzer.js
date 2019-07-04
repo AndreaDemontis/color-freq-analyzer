@@ -265,7 +265,7 @@ export default class VideoAnalyzer extends Component
                 </div><br/>
                 <div className={Style.description}>
 											The above spectrogram shows how the color change index evolves over time. If there is a high concentration of pixels that changed color
-											by a considerable amount the color change index will have an higher value, so the <b>upper</b> part of the spectrogram will be colored yellow, if
+											by a considerable amount the color change index will have a higher value, so the <b>upper</b> part of the spectrogram will be colored yellow, if
 											the amount of color changes is low in a certain frame, the <b>lower</b> area of ​​the spectrogram will be yellow instead.
                 </div>
             </div>

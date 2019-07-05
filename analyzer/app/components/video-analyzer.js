@@ -84,11 +84,11 @@ export default class VideoAnalyzer extends Component
                             <h1>Analyzer</h1>
 							<p>The analysis process could takes some minutes, please wait for it to end before making changes to the selected options.<br />
 	                        </p><br/>
-                            <StartButton onClick={this.process} state={this.state.state} proggress={this.state.percentage}>
+                            <StartButton onClick={this.process} state={this.state.state} proggress={Math.min(100, this.state.percentage)}>
                                 <FontAwesomeIcon icon={faBurn} onClick={this.stepBack} style={{fontSize: "16px"}}/> <span style={{marginLeft: "7px"}}>Start process</span>
                             </StartButton>
 							<p>
-								<b>{this.state.percentage}%</b> - Estimated time: <b>{(this.state.eta / 1000).toFixed(2)}s</b>
+								<b>{Math.min(100, this.state.percentage)}%</b> - Estimated time: <b>{(this.state.eta / 1000).toFixed(2)}s</b>
 							</p>
                             <button onClick={this.open} className={Style.button}><FontAwesomeIcon icon={faWrench} onClick={this.stepBack} /> <span>Options</span></button>
                         </div>
@@ -474,7 +474,7 @@ export default class VideoAnalyzer extends Component
         {
             console.log("% completed.");
             let elapsed = Date.now() - this.state.startTime;
-            let remaining = (elapsed * (100 / currentPerc)) - elapsed;
+            let remaining = Math.max(0,(elapsed * (100 / currentPerc)) - elapsed);
             this.setState(
             {
                 percentage: currentPerc,
